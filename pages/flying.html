@@ -15,12 +15,14 @@ layout: default
       background-color: rgba(0,0,0,0.8);
     }
 
-    .modal img {
-      display: block;
-      margin: 5% auto;
-      max-width: 90%;
-      max-height: 80%;
-      box-shadow: 0 0 20px white;
+	.modal img {
+	  display: block;
+	  margin: 5% auto;
+	  width: auto;
+	  height: auto;
+	  max-width: 90vw;
+	  max-height: 80vh;
+	  box-shadow: 0 0 0px white;
     }
 
     .modal:target {
@@ -61,11 +63,12 @@ layout: default
 
 <section>
   <h2>Photo Gallery</h2>
-  <p>Here are some nice pics I have during my flights!</p>
+  <p>Here are some nice pics I have during my flights! (click to see the full size picture)</p>
   
   <!-- Thumbnails -->
 <a href="#img1"><img src="../images/hobby1.jpg" class="thumbnail" alt="Thumb 1"></a>
 <p>Cross Country Flying to KMLJ in an PA-28-161</p>
+
 
 <a href="#img2"><img src="../images/KATL.jpg" class="thumbnail" alt="Thumb 2"></a>
 <p>Flying over KATL </p>
@@ -75,39 +78,21 @@ layout: default
 
 <!-- Modals -->
 <div id="img1" class="modal" style="flex: 1; min-width: 600px;">
-  <a href="#"><img src="../images/hobby1.jpg" alt="Approaching KMLJ in an PA-28-161" style="width: 75%; border-radius: 8px;"/></a>
+  <a href="#"><img src="../images/hobby1.jpg" alt="Approaching KMLJ in an PA-28-161" style="width: 120%; border-radius: 8px;"/></a>
   
 </div>
 
 <div id="img2" class="modal" style="flex: 1; min-width: 600px;">
-  <a href="#"><img src="../images/KATL.jpg" alt="KATL" style="width: 75%; border-radius: 8px;" /></a>
+  <a href="#"><img src="../images/KATL.jpg" alt="KATL" style="width: 120%; border-radius: 8px;" /></a>
   
 </div>
 
 <div id="img3" class="modal" style="flex: 1; min-width: 600px;">
-  <a href="#"><img src="../images/mountain_flying.jpg" alt="Blue Ridge Mountains" style="width: 75%; border-radius: 8px;" /></a>
+  <a href="#"><img src="../images/mountain_flying.jpg" alt="Blue Ridge Mountains" style="width: 120%; border-radius: 8px;" /></a>
   
 </div>
 
-<!--
-  <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-    <div style="flex: 1; min-width: 600px;">
-      <img src="../images/hobby1.jpg" alt="Approaching KMLJ in an PA-28-161" style="width: 75%; border-radius: 8px;" />
-      <p>Cross Country Flying to KMLJ in an PA-28-161</p>
-    </div>
-	<br>
-	  <div style="flex: 1; min-width: 600px;">
-      <img src="../images/KATL.jpg" alt="KATL" style="width: 75%; border-radius: 8px;" />
-      <p>Flying over KATL </p>
-    </div>
-	<br>
-	  <div style="flex: 1; min-width: 200px;">
-      <img src="../images/mountain_flying.jpg" alt="Blue Ridge Mountains" style="width: 75%; border-radius: 8px;" />
-      <p>Flying across the Blue Ridge Mountains near the Georgia-Tennessee border </p>
-    </div>
-   
-  </div>
-  -->
+
 </section>
 
 
