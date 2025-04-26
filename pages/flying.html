@@ -2,6 +2,37 @@
 layout: default
 
 ---
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal img {
+      display: block;
+      margin: 5% auto;
+      max-width: 90%;
+      max-height: 80%;
+      box-shadow: 0 0 20px white;
+    }
+
+    .modal:target {
+      display: block;
+    }
+
+    .thumbnail {
+      cursor: pointer;
+      max-width: 200px;
+    }
+  </style>
+</head>
 
 <p><a href="../index.html">Home Page</a></p>
 <h1>Flying as an FAA Certified Private Pilot</h1>
@@ -31,6 +62,27 @@ layout: default
 <section>
   <h2>Photo Gallery</h2>
   <p>Here are some nice pics I have during my flights!</p>
+  
+  <!-- Thumbnails -->
+<a href="#img1"><img src="img1-thumb.jpg" class="thumbnail" alt="Thumb 1"></a>
+<a href="#img2"><img src="img2-thumb.jpg" class="thumbnail" alt="Thumb 2"></a>
+<a href="#img3"><img src="img3-thumb.jpg" class="thumbnail" alt="Thumb 3"></a>
+
+<!-- Modals -->
+<div id="img1" class="modal" style="flex: 1; min-width: 600px;">
+  <a href="#"><img src="../images/hobby1.jpg" alt="Approaching KMLJ in an PA-28-161" style="width: 75%; border-radius: 8px;></a>
+  <p>Cross Country Flying to KMLJ in an PA-28-161</p>
+</div>
+
+<div id="img2" class="modal" style="flex: 1; min-width: 600px;">
+  <a href="#"><img src="../images/KATL.jpg" alt="KATL" style="width: 75%; border-radius: 8px;" /></a>
+  <p>Flying over KATL </p>
+</div>
+
+<div id="img3" class="modal" style="flex: 1; min-width: 600px;">
+  <a href="#"><img src="../images/mountain_flying.jpg" alt="Blue Ridge Mountains" style="width: 75%; border-radius: 8px;" /></a>
+  <p>Flying across the Blue Ridge Mountains near the Georgia-Tennessee border </p>
+</div>
 
   <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
     <div style="flex: 1; min-width: 600px;">
@@ -50,3 +102,6 @@ layout: default
    
   </div>
 </section>
+
+
+</html>
