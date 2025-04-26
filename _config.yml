@@ -4,9 +4,3 @@ description: Hi there! You have found Yanbin's Personal Page!
 show_downloads: false
 theme: jekyll-theme-minimal
 
-# Add this line to enable custom head injection:
-defaults:
-  - scope:
-      path: ""
-    values:
-      include: head-custom.html
